@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>WEB ACADEMY - FULLSTACK</title>
+        <link rel="stylesheet" href="css/style2.css" type="text/css">
+    </head>
+    <body>
+        <header>
+            <div id="logo">
+                <img src="assets\motorola.png" alt="Logo BMW">
+            </div>
+                <h2>WEB ACADEMY - FULLSTACK</h2>
+            <div>
+            <nav id="menu">
+                <ul>
+                    <li>
+                        <span><a href="#lugar1"><input type="submit" value="1"></a></span>
+                        <span><a href="#lugar2"><input type="submit" value="2"></a></span>
+                        <span><a href="#lugar3"><input type="submit" value="3"></a></span>
+                        <span><a href="#lugar4"><input type="submit" value="4"></a></span>
+                    </li>
+                </ul>
+            </nav>
+            </div>
+        </header>
+        <main id="main">
+            <ul>
+                <div><section id="lugar1"><h3>Section1</h3></section></div>
+                <div><section id="lugar1"><h3>Section2</h3></section></div>
+                <div><section id="lugar1"><h3>Section3</h3></section></div>
+                <div><section id="lugar1"><h3>Section4</h3></section></div>
+            </ul>
+        </main>
+         
+        <br>
+        <footer>
+            <h3>Footer</h3>
+        </footer>
+    </body>
+</html>
+
+
