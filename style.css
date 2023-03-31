@@ -1,0 +1,26 @@
+body {
+    background-color: #97ddc0;
+}
+div#menu {
+    background-color: #2d77bd;
+    border-radius: 10px;
+}
+
+div#menu, div#news {
+    color: black
+}
+
+div#news {
+    background-image: linear-gradient(#2f85d6, #940040);
+    text-align-last: center;
+    align-self: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    display:inline-block;
+    margin-top: 5%;
+    margin-left: 13%;
+}
+
+
+
