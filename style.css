@@ -1,19 +1,32 @@
 body {
-    background-color: #97ddc0;
+    background-color: #54a885;
 }
-div#menu {
-    background-color: #2d77bd;
+#menu {
+    background-color: #f3c9a3ec;
     border-radius: 10px;
+    height: 150px;
 }
 
-div#menu, div#news {
-    color: black
+#menu ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#logo {
+    width: 75px;
+    height: 75px;
+    border-radius: 70px;
+    margin: 1%;
+}
+
+#link:hover{
+    color: red;
 }
 
 div#news {
-    background-image: linear-gradient(#2f85d6, #940040);
-    text-align-last: center;
-    align-self: auto;
+    background-color: #f3c8a3e3;
+    color: black;
+    text-align: center;
     width: 200px;
     height: 200px;
     border-radius: 10px;
@@ -22,5 +35,30 @@ div#news {
     margin-left: 13%;
 }
 
+div#main{
+    text-align: center;
+}
 
+div#news img {
+    border-radius: 75px;
+    height: 150px;
+    width: 150px;
+    margin-top: 5%;
+}
 
+footer div video {
+    float: left;
+    width: 35%;
+    border: 1px solid #f3c8a3e3;
+    margin: 20px;
+    padding: 20px;
+}
+
+footer div #fim {
+    float: right;
+    padding-inline-end: 10%;
+    width: 57%;
+    border: 1px solid #f3c8a3e3;
+    margin-left: 10%;
+    padding: 10px;
+}
