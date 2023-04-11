@@ -26,12 +26,14 @@ public class Array_dinamico {
         System.out.println("-------------------");
 
         Integer[] novo_numeros = numeros.toArray(new Integer[0]);
-        System.out.println("Elementos do array em ordem crescente: " + novo_numeros);
+        System.out.println("Elementos do array em ordem crescente: ");
+        Arrays.sort(novo_numeros);
+        System.out.println(Arrays.toString(novo_numeros));
         System.out.println("-------------------");
 
         int posicao = Arrays.binarySearch(novo_numeros, 9);
-        System.out.println("Considerando o meu novo array que está ordenado.");
-        System.out.println("O elemento 9 está na posição "+ posicao);
+        System.out.println("Considerando o meu novo array que esta ordenado.");
+        System.out.println("O elemento 9 esta na posicao "+ posicao);
         System.out.println("-------------------");
 
         Integer[] maiores = new Integer[3];
@@ -39,11 +41,13 @@ public class Array_dinamico {
         maiores = Arrays.copyOfRange(novo_numeros, 2, 5);
         System.out.println("Elementos no array maiores: ");
         System.out.println(Arrays.toString(maiores));
-        System.out.println(maiores);
+        System.out.println("-------------------");
+
+        //boolean resposta = Arrays.equals(numeros, maiores);
+        //System.out.println("Os arrays 'numeros' e 'maiores apresenta a mesma quantidade de elementos nas mesmas posições:" + resposta);
+
     }
-
 }
-
 
 // import java.util.ArrayList;
 
@@ -61,9 +65,6 @@ public class Array_dinamico {
 //         numeros.add(1);
 
 //         for (int i = 0; i < numeros.length; i++);
-
-
-        
 //     }
 
 //     static void array_dinamico() {
@@ -81,6 +82,4 @@ public class Array_dinamico {
 //     static void mostrar_array(array) {
 //         for (int i = 0; i < array.length; i++);
 //     }
-
-    
 // }
