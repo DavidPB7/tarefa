@@ -51,5 +51,7 @@ public class Array_dinamico {
             System.out.println(numeros.get(i));
         }
 
+
+        
     }
 }
