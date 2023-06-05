@@ -1,0 +1,42 @@
+import tkinter as tk
+
+
+class Tela:
+
+    def verificar(self):
+        data_nascimento = self.v.get()
+        idade = 2023 - data_nascimento
+        lbl_conta = tk.Label(self.janela, text=f'Você tem {idade} anos de idade!')
+        lbl_conta.pack()
+
+    def __init__(self, master):
+        self.janela = master
+        self.janela.title('Atividade01')
+        self.janela.geometry('400x500')
+        self.v = tk.IntVar()
+        self.v.set(0)
+
+        # tamanho maximo:
+        self.janela.maxsize(800, 800)
+        lbl_usuario = tk.Label(self.janela, text='Usuário')
+        lbl_usuario.pack()
+
+        ent_usuario = tk.Entry(self.janela, width=31)
+        ent_usuario.pack()
+
+        lbl_ano = tk.Label(self.janela, text='Ano de nascimento')
+        lbl_ano.pack()
+
+        ent_ano = tk.Spinbox(self.janela, from_=1930, to=2022, textvariable=self.v, wrap=True, width=30)
+        ent_ano.pack()
+
+        btn_verificar = tk.Button(self.janela, text='verificar', command=self.verificar)
+        btn_verificar.pack()
+
+        btn_fechar = tk.Button(self.janela, text='Fechar', command=self.janela.destroy)
+        btn_fechar.pack()
+
+
+master = tk.Tk()
+app = Tela(master)
+master.mainloop()
